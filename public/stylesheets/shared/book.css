@@ -75,7 +75,7 @@
         margin-top: 15px;
     }
     .book-details-grid div:not(.book-details-label) {
-        border-bottom: 2px solid #eee;
+        /* border-bottom: 2px solid #eee; */
     }
     .book-details-grid {
         gap: 0;
