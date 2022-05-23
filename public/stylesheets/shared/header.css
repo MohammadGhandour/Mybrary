@@ -1,0 +1,64 @@
+@import 'shared/variables.css';
+
+:root {
+    --fs-nav-title: 3rem;
+    --fw-nav-title: bold;
+}
+
+.header-title {
+    color: white;
+    text-decoration: none;
+    font-size: var(--fs-nav-title);
+    font-weight: var(--fw-nav-title);
+    transition: all 0.2s;
+}
+
+.header-title:hover {
+    color: var(--color-text-light);
+    transform: scale(1.1);
+}
+
+header {
+    margin-top: 10px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 20px 5rem 20px;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header-link a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    background-color: var(--color-background-light);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.2s;
+    font-size: 1.2rem;
+}
+
+.header-link a:hover {
+    background-color: rgba(238, 238, 238, 1);
+    color: var(--color-background-light);
+}
+
+.page-header {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 650px) {
+    .header-link {
+        padding: 20px 0;
+    }
+}

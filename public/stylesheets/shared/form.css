@@ -1,0 +1,100 @@
+:root {
+    --form-label-fs: 1.2rem;
+    --form-input-bg-clr: ;
+    --form-input-border-clr: ;
+    --form-input-border-clr-light: ;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.form-item:first-child {
+    margin-left: 0;
+}
+
+.form-item-no-grow {
+    flex-grow: 0;
+}
+
+.form-row-end {
+    justify-content: flex-end;
+}
+
+.form-item label {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+    margin-left: 0.25rem;
+}
+
+.form-item input, .form-item select, .form-item textarea {
+    height: 2rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid hsl(200, 100%, 50%);
+    background-color: hsl(200, 100%, 31%);
+    color: hsl(200, 100%, 87%);
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: roboto;
+    outline: none;
+}
+
+.form-item input:focus, .form-item select:focus, .form-item textarea:focus {
+    border-color: hsl(200, 100%, 80%);
+}
+
+.form-item textarea {
+    height: 100%;
+    resize: none;
+}
+
+.form-item select option {
+    background-color: black;
+}
+
+.filepond--root {
+    font-family: 'open sans';
+    margin-bottom: 0;
+}
+
+.filepond--panel-root {
+    background-color: hsl(200, 100%, 31%);
+    border-color: 1px solid hsl(200, 100%, 50%);
+}
+
+.filebond--drop-label {
+    color: hsl(200, 100%, 87%);
+    font-size: inherit;
+}
+
+@media screen and (max-width: 600px) {
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .form-item {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .form-item input, .form-item textarea {
+        width: 100%;
+    }
+
+    .form-item textarea {
+        height: 150px;
+    }
+}

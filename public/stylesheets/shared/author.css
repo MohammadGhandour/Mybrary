@@ -1,0 +1,22 @@
+.author-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.author-name {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .author-row {
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+    }
+}
