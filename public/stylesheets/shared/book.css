@@ -59,3 +59,25 @@
     grid-area: author;
     justify-self: stretch;
 }
+
+@media screen and (max-width:600px) {
+    .book-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .book-details-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .book-details-label {
+        margin-top: 15px;
+    }
+    .book-details-grid div:not(.book-details-label) {
+        border-bottom: 2px solid #eee;
+    }
+    .book-details-grid {
+        gap: 0;
+    }
+}
